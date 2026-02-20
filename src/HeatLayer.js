@@ -193,6 +193,7 @@ L.HeatLayer = (L.Layer ? L.Layer : L.Class).extend({
         }
         // console.timeEnd('process');
 
+        this._heat.max(max * v);
         // console.time('draw ' + data.length);
         this._heat.data(data).draw(this.options.minOpacity);
         // console.timeEnd('draw ' + data.length);
