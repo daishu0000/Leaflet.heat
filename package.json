@@ -1,6 +1,6 @@
 {
   "name": "@daishu10000/leaflet-heat",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "type": "module",
   "description": "A tiny and fast Leaflet heatmap plugin (community bugfix fork).",
   "homepage": "https://github.com/daishu0000/Leaflet.heat",
