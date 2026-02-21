@@ -1,6 +1,7 @@
 {
   "name": "@daishu10000/leaflet-heat",
   "version": "0.2.2",
+  "type": "module",
   "description": "A tiny and fast Leaflet heatmap plugin (community bugfix fork).",
   "homepage": "https://github.com/daishu0000/Leaflet.heat",
   "keywords": [
@@ -12,43 +13,43 @@
     "plugin"
   ],
   "author": "daishu0000",
+  "license": "BSD-2-Clause",
   "repository": {
     "type": "git",
     "url": "git://github.com/daishu0000/Leaflet.heat.git"
   },
   "main": "dist/leaflet-heat.js",
-  "devDependencies": {
-    "eslint": "^1.7.3",
-    "eslint-config-mourner": "^1.0.1",
-    "simpleheat": "~0.4.0",
-    "uglify-js": "^2.5.0"
+  "scripts": {
+    "build": "rollup -c",
+    "test": "eslint src",
+    "prepublishOnly": "npm run build"
   },
-  "eslintConfig": {
-    "extends": "mourner",
-    "globals": {
-      "L": false,
-      "simpleheat": false
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.0",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-terser": "^0.4.0",
+    "eslint": "^9.0.0",
+    "rollup": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/leaflet-heat.js",
+      "require": "./dist/leaflet-heat.js",
+      "default": "./dist/leaflet-heat.js"
     }
   },
-  "scripts": {
-    "test": "eslint src",
-    "prepublish": "uglifyjs node_modules/simpleheat/simpleheat.js src/HeatLayer.js -c -m -o dist/leaflet-heat.js"
-  },
-  "license": "BSD-2-Clause",
-  "jshintConfig": {
-    "quotmark": "single",
-    "globals": {
-      "L": true,
-      "simpleheat": true
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "env": {
+      "browser": true,
+      "es2022": true
     },
-    "trailing": true,
-    "camelcase": true,
-    "curly": true,
-    "eqeqeq": true,
-    "noempty": true,
-    "nonbsp": true,
-    "undef": true,
-    "unused": true,
-    "browser": true
+    "globals": {
+      "L": "readonly",
+      "simpleheat": "writable"
+    }
   }
 }
