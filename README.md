@@ -1,9 +1,13 @@
 Leaflet.heat
 ==========
 
-A tiny, simple and fast [Leaflet](http://leafletjs.com) heatmap plugin.
+A tiny, simple and fast [Leaflet](http://leafletjs.com) heatmap plugin (community bugfix fork).
 Uses [simpleheat](https://github.com/mourner/simpleheat) under the hood,
 additionally clustering points into a grid for performance.
+
+- **Package**: [@daishu10000/leaflet-heat](https://www.npmjs.com/package/@daishu10000/leaflet-heat)
+- **Homepage**: https://github.com/daishu0000/Leaflet.heat
+- **License**: BSD-2-Clause
 
 
 ## Demos
@@ -63,33 +67,16 @@ Unless `max` option is specified, intensity should range between `0.0` and `1.0`
 
 ## Changelog
 
-### 0.2.0 &mdash; Oct 26, 2015
+This fork is maintained from version 0.2.1 onward. For 0.2.0 and earlier, see the [upstream repository](https://github.com/Leaflet/Leaflet.heat).
 
-- Fixed intensity to work properly with `max` option.
-- Fixed zoom animation on Leaflet 1.0 beta 2.
-- Fixed tiles and point intensity in demos.
+### 0.3.2 &mdash; Feb 21, 2026
 
-#### 0.1.3 &mdash; Nov 25, 2015
-
-- Fixed some edge cases when handling point intensity.
-- Added `minOpacity` option.
-
-#### 0.1.2 &mdash; Nov 5, 2014
-
-- Added compatibility with Leaflet 0.8-dev.
-
-#### 0.1.1 &mdash; Apr 22, 2014
-
-- Fixed overlaying two heatmaps on top of each other.
-- Fixed rare animation issues.
-
-#### 0.1.0 &mdash; Feb 3, 2014
-
-- Added `addLatLng`, `setLatlngs`, `setOptions` and `redraw` methods.
-- Added `max` option and support for different point intensity values (through `LatLng` third argument).
-- Added `gradient` option to customize colors.
-
-#### 0.0.1 &mdash; Jan 31, 2014
-
-- Initial release.
+- Fix #144: normalize container point before bounds.contains() for cross-Leaflet-instance compatibility.
+- A better max setting.
+- Modify npm package settings.
+- Update the homepage and author.
+- Use the newest version of simpleheat.js and modernize the environment.
+- Update the version.
+- Update the license.
+- Update eslint.
 
