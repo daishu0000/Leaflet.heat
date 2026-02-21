@@ -69,14 +69,20 @@ Unless `max` option is specified, intensity should range between `0.0` and `1.0`
 
 This fork is maintained from version 0.2.1 onward. For 0.2.0 and earlier, see the [upstream repository](https://github.com/Leaflet/Leaflet.heat).
 
-### 0.3.2 &mdash; Feb 21, 2026
+### 0.2.1 &mdash; Feb 20, 2026
+- Fix crash when map and heat use different Leaflet instances.
 
-- Fix #144: normalize container point before bounds.contains() for cross-Leaflet-instance compatibility.
+### 0.2.2 &mdash; Feb 21, 2026
 - A better max setting.
-- Modify npm package settings.
-- Update the homepage and author.
+
+### 0.3.0 &mdash; Feb 21, 2026
 - Use the newest version of simpleheat.js and modernize the environment.
-- Update the version.
+
+### 0.3.1 &mdash; Feb 21, 2026
 - Update the license.
+
+### 0.3.2 &mdash; Feb 21, 2026
 - Update eslint.
 
+### 0.3.3 &mdash; Feb 21, 2026
+- Update README.md.
