@@ -2,7 +2,7 @@
   "name": "@daishu10000/leaflet-heat",
   "version": "0.2.2",
   "description": "A tiny and fast Leaflet heatmap plugin (community bugfix fork).",
-  "homepage": "https://github.com/Leaflet/Leaflet.heat",
+  "homepage": "https://github.com/daishu0000/Leaflet.heat",
   "keywords": [
     "heatmap",
     "canvas",
@@ -11,10 +11,10 @@
     "leaflet",
     "plugin"
   ],
-  "author": "Vladimir Agafonkin",
+  "author": "daishu0000",
   "repository": {
     "type": "git",
-    "url": "git://github.com/Leaflet/Leaflet.heat.git"
+    "url": "git://github.com/daishu0000/Leaflet.heat.git"
   },
   "main": "dist/leaflet-heat.js",
   "devDependencies": {
